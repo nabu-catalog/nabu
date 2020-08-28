@@ -18,7 +18,7 @@ Nabu::Application.routes.draw do
 
   post "versions/:id/revert" => "versions#revert", :as => "revert_version"
 
-  # resources :users, only: %i(index show edit update) do
+  resources :users, only: %i(index show update)
   #   member do
   #     get 'merge'
   #     put 'merge' => 'users#merge'
